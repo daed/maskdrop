@@ -1,0 +1,234 @@
+<html>
+
+<head>
+    <title>Maskdrop: A RGB bitmask generator for the Massdrop Alt</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Inconsolata|Open+Sans" rel="stylesheet">
+</head>
+
+<body style="
+text-align: center;
+">
+    <h1>Maskdrop: A RGB bitmask generator for the Massdrop Alt</h1>
+
+    <div id="brief" class="instructions" style="
+padding-left: 10%;
+">
+        <h2>Instructions / Background</h2>
+        <div id="showInstructions" class="control">Do you want to know more? (expand explanation)</div>
+        <p style="
+text-align: justify;
+"> To use this page, click on a set of buttons in the table below to define a region of keys you want to share a common
+            color, and then add the ranges to as line in your led_instruction_t set in keymap.c.</p>
+    </div>
+    <div id="instructions" class="instructions hide">
+        <p>QMK uses a bitmask to define subsets of keys to apply RGB effects to. An example of this
+            is <a
+                href="https://github.com/pleasuretek/qmk_firmware/blob/master/keyboards/massdrop/alt/keymaps/pleasuretek/keymap.c">found
+                here</a>.
+            The problem becomes that this is not a straightforward thing to calculate. You can use the Configurator, but
+            that doesn't expose access
+            to more customized colors and features that only a custom QMK configuration can provide.</p>
+        <p> To use this page, click on a set of buttons in the table below to define a region of keys you want to share
+            a common color, and then add the ranges to as line in your led_instruction_t set in keymap.c.</p>
+        <p> The below example will set your home keys (ASDFJKL;) to be green: </p>
+        <pre> {.flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, <strong>.id0 = 2147483648, .id1 = 487,</strong> .r = 0, .g = 255, .b = 0},</pre>
+
+
+    </div>
+    <div style="
+width: 49%;
+display: inline-block;
+vertical-align: text-bottom;
+">
+        <h2><u>Generated bitmask string:</u></h2>
+        <div>
+            <div id="codes" class="ledCodes" style="
+padding-left: 30%;
+font-family: consolas;
+">
+                <strong>
+                    <div class="code">.id0 = </div>
+                    <div class="code" id="code0">0,</div>
+                    <div class="code">.id1 = </div>
+                    <div class="code" id="code1">0,</div>
+                    <div class="code">.id2 = </div>
+                    <div class="code" id="code2">0,</div>
+                    <div class="code">.id3 = </div>
+                    <div class="code" id="code3">0,</div>
+                </strong>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="tab">
+
+        <tbody>
+            <tr>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id3" id="100">underglow</td>
+                <td class="kbkey id3" id="99">underglow</td>
+                <td class="kbkey id3" id="98">underglow</td>
+                <td class="kbkey id3" id="97">underglow</td>
+                <td class="kbkey id2" id="96">underglow</td>
+                <td class="kbkey id2" id="95">underglow</td>
+                <td class="kbkey id2" id="94">underglow</td>
+                <td class="kbkey id2" id="93">underglow</td>
+                <td class="kbkey id2" id="92">underglow</td>
+                <td class="kbkey id2" id="91">underglow</td>
+                <td class="kbkey id2" id="90">underglow</td>
+                <td class="kbkey id2" id="89">underglow</td>
+                <td class="kbkey id2" id="88">underglow</td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+            </tr>
+            <tr>
+                <td class="kbkey id3" id="101">underglow</td>
+                <td class="kbkey id0" id="1">esc</td>
+                <td class="kbkey id0" id="2">1</td>
+                <td class="kbkey id0" id="3">2</td>
+                <td class="kbkey id0" id="4">3</td>
+                <td class="kbkey id0" id="5">4</td>
+                <td class="kbkey id0" id="6">5</td>
+                <td class="kbkey id0" id="7">6</td>
+                <td class="kbkey id0" id="8">7</td>
+                <td class="kbkey id0" id="9">8</td>
+                <td class="kbkey id0" id="10">9</td>
+                <td class="kbkey id0" id="11">0</td>
+                <td class="kbkey id0" id="12">-</td>
+                <td class="kbkey id0" id="13">+</td>
+                <td class="kbkey id0" id="14">backspace</td>
+                <td class="kbkey id0" id="15">del</td>
+                <td class="kbkey id2" id="87">underglow</td>
+            </tr>
+            <tr>
+                <td class="kbkey id3" id="102">underglow</td>
+                <td class="kbkey id0" id="16">tab</td>
+                <td class="kbkey id0" id="17">q</td>
+                <td class="kbkey id0" id="18">w</td>
+                <td class="kbkey id0" id="19">e</td>
+                <td class="kbkey id0" id="20">r</td>
+                <td class="kbkey id0" id="21">t</td>
+                <td class="kbkey id0" id="22">y</td>
+                <td class="kbkey id0" id="23">u</td>
+                <td class="kbkey id0" id="24">i</td>
+                <td class="kbkey id0" id="25">o</td>
+                <td class="kbkey id0" id="26">p</td>
+                <td class="kbkey id0" id="27">[</td>
+                <td class="kbkey id0" id="28">]</td>
+                <td class="kbkey id0" id="29">\</td>
+                <td class="kbkey id0" id="30">home</td>
+                <td class="kbkey id2" id="86">underglow</td>
+            </tr>
+            <tr>
+                <td class="kbkey id3" id="103">underglow</td>
+                <td class="kbkey id0" id="31">caps</td>
+                <td class="kbkey id0" id="32">a</td>
+                <td class="kbkey id1" id="33">s</td>
+                <td class="kbkey id1" id="34">d</td>
+                <td class="kbkey id1" id="35">f</td>
+                <td class="kbkey id1" id="36">g</td>
+                <td class="kbkey id1" id="37">h</td>
+                <td class="kbkey id1" id="38">j</td>
+                <td class="kbkey id1" id="39">k</td>
+                <td class="kbkey id1" id="40">l</td>
+                <td class="kbkey id1" id="41">;</td>
+                <td class="kbkey id1" id="42">'</td>
+                <td class="kbkey id1" id="43">enter</td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id1" id="44">pgup</td>
+                <td class="kbkey id2" id="85">underglow</td>
+            </tr>
+            <tr>
+                <td class="kbkey id3" id="104">underglow</td>
+                <td class="kbkey id1" id="45">shift</td>
+                <td class="kbkey id1" id="46">z</td>
+                <td class="kbkey id1" id="47">x</td>
+                <td class="kbkey id1" id="48">c</td>
+                <td class="kbkey id1" id="49">v</td>
+                <td class="kbkey id1" id="50">b</td>
+                <td class="kbkey id1" id="51">n</td>
+                <td class="kbkey id1" id="52">m</td>
+                <td class="kbkey id1" id="53">&lt;</td>
+                <td class="kbkey id1" id="54">&gt;</td>
+                <td class="kbkey id1" id="55">/</td>
+                <td class="kbkey id1" id="56">shift</td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id1" id="57">up</td>
+                <td class="kbkey id1" id="58">pgdn</td>
+                <td class="kbkey id2" id="84">underglow</td>
+            </tr>
+            <tr>
+                <td class="kbkey id3" id="105">underglow</td>
+                <td class="kbkey id1" id="59">ctrl</td>
+                <td class="kbkey id1" id="60">meta</td>
+                <td class="kbkey id1" id="61">alt</td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id1" id="62">spacebar</td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id1" id="63">alt</td>
+                <td class="kbkey id1" id="64">fn</td>
+                <td class="kbkey id2" id="65">left</td>
+                <td class="kbkey id2" id="66">down</td>
+                <td class="kbkey id2" id="67">right</td>
+                <td class="kbkey id2" id="83">underglow</td>
+            </tr>
+            <tr>
+                <td class="kbkey null" id="0"></td>
+                <td class="kbkey id2" id="68">underglow</td>
+                <td class="kbkey id2" id="69">underglow</td>
+                <td class="kbkey id2" id="70">underglow</td>
+                <td class="kbkey id2" id="71">underglow</td>
+                <td class="kbkey id2" id="72">underglow</td>
+                <td class="kbkey id2" id="73">underglow</td>
+                <td class="kbkey id2" id="74">underglow</td>
+                <td class="kbkey id2" id="75">underglow</td>
+                <td class="kbkey id2" id="76">underglow</td>
+                <td class="kbkey id2" id="77">underglow</td>
+                <td class="kbkey id2" id="78">underglow</td>
+                <td class="kbkey id2" id="79">underglow</td>
+                <td class="kbkey id2" id="80">underglow</td>
+                <td class="kbkey id2" id="81">underglow</td>
+                <td class="kbkey id2" id="82">underglow</td>
+                <td class="kbkey null" id="0"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="reset" class="control" style="
+padding-top: 15px;
+">Reset layout</div>
+    <h2>Disclaimers, licenses, and et cetera:</h2>
+    <div class="footer instructions">
+        <p>This code is licensed under the <a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL2.0</a>.
+            It is almost certainly rife with bugs and unfit for any purpose.
+            Use at your own risk.
+            Insert all the other typical CYA stuff. </p>
+        <p>Report bugs to <a href="https://github.com/daed/maskdrop">https://github.com/daed/maskdrop</a>.</p>
+        <p>If you like this and would like to see more work like it, please consider donating: </p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="NMURXDPQQNF5J">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0"
+                name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <p></p>
+
+        <p class="version">v1.0.1</p>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

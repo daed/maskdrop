@@ -1,0 +1,92 @@
+
+.tab {
+    background-color: darkslategrey;
+    border: 1px solid black;
+}
+
+.ledCodes {
+    float: left;
+    width: 100%;
+    margin: 0px 30px 30px 30px;
+    font-family: 'Inconsolata', monospace;
+    font-size: .9em;
+}
+
+.control {
+    color: blue;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7em;
+}
+
+.code {
+    float: left;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.kbkey {
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.instructions {
+    width: 70%;
+}
+
+.hide {
+    /* collapse instead of hidden to remove whitespace */
+    display: none;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.version {
+    font-family: 'Inconsolata', monospace;    
+    font-size: .75em;
+}
+
+pre {
+    font-family: 'Inconsolata', monospace;    
+    font-size: .9em;
+}
+
+.null {
+    background-color: darkslategrey;
+}
+
+.id0, .id1, .id2, .id3 {
+    background-color: green;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+}
+
+.selected {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .8em;
+}

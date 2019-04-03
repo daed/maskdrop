@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Maskdrop:  A RGB bitmask generator for the Massdrop Alt</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Inconsolata|Open+Sans" rel="stylesheet"> 
+    </head>
+    <body>
+        <h1>Maskdrop:  A RGB bitmask generator for the Massdrop Alt</h1>
+        <h2>Instructions / Background</h2>
+        <div id="showInstructions" class="control">Do you want to know more? (expand explanation)</div>
+        <div id="brief" class="instructions">
+            <p> To use this page, click on a set of buttons in the table below to define a region of keys you want to share a common color, and then add the ranges to as line in your led_instruction_t set in keymap.c.</p>
+        </div>
+        <div id="instructions" class="instructions hide">
+            <p>QMK uses a bitmask to define subsets of keys to apply RGB effects to.  An example of this 
+            is <a href="https://github.com/pleasuretek/qmk_firmware/blob/master/keyboards/massdrop/alt/keymaps/pleasuretek/keymap.c">found here</a>.
+            The problem becomes that this is not a straightforward thing to calculate.  You can use the Configurator, but that doesn't expose access
+            to more customized colors and features that only a custom QMK configuration can provide.</p>
+            <p> To use this page, click on a set of buttons in the table below to define a region of keys you want to share a common color, and then add the ranges to as line in your led_instruction_t set in keymap.c.</p>
+            <p> The below example will set your home keys (ASDFJKL;) to be green: </p>
+            <pre> {.flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, <strong>.id0 = 2147483648, .id1 = 487,</strong> .r = 0, .g = 255, .b = 0},</pre>
+        </div>
+        <h2>Massdrop Alt Layout:</h2>
+        <div id="reset" class="control">Reset layout</div>
+        <table class="tab">
+
+        </table>
+
+        <h2>Generated bitmask string:</h2>
+        <div>
+            <div id="codes" class="ledCodes">
+                <strong>
+                    <div class="code">.id0 = </div> <div class="code" id="code0">0, </div>
+                    <div class="code">.id1 = </div> <div class="code" id="code1">0, </div>
+                    <div class="code">.id2 = </div> <div class="code" id="code2">0, </div>
+                    <div class="code">.id3 = </div> <div class="code" id="code3">0, </div>
+                </strong>
+            </div>
+        </div>
+        <h2>Disclaimers, licenses, and et cetera:</h2>
+        <div class="footer instructions"><p>This code is licensed under the <a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL2.0</a>.  
+            It is almost certainly rife with bugs and unfit for any purpose.  
+            Use at your own risk.  
+            Insert all the other typical CYA stuff.  </p>
+            <p>Report bugs to <a href=https://github.com/daed/maskdrop>https://github.com/daed/maskdrop</a>.</p>
+            <p>If you like this and would like to see more work like it, please consider donating: <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="NMURXDPQQNF5J" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+                </p>
+
+            <p class="version">v1.0.1</p>
+        </div>
+    </body>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
