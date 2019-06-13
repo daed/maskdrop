@@ -1,6 +1,8 @@
 # maskdrop
 Maskdrop:  A backlight mask generator for the Massdrop Alt
 
+#### Note: due to RGB Matrix functionality being implemented for the Massdrop keyboards, this tool is only applicable to older versions of QMK (or pleasuretek's fork).  If you are using a recent version of QMK, please refer to the QMK docs for RGB Matrix instead.  
+
 QMK (for the MD Alt/Ctrl specifically) uses a bitmask to define subsets of keys to apply RGB effects to.  An example of this is <a href="https://github.com/pleasuretek/qmk_firmware/blob/master/keyboards/massdrop/alt/keymaps/pleasuretek/keymap.c">found here</a>.
 
 The problem becomes that this is not a straightforward thing to calculate.  You can use the Configurator, but that doesn't expose access to more customized colors and features that only a custom QMK configuration can provide.</p>
